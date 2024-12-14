@@ -1,0 +1,39 @@
+/* post-list.module.css */
+.posts {
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    padding: 1rem;
+    max-width: 1200px;
+}
+
+.post {
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: left;
+    background-color: #f0f0f0;
+    font-family: 'Times New Roman', Times, serif;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post p:first-child {
+    margin: 0 0 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.post p:last-child {
+    margin: 0;
+    color: #555;
+    line-height: 1.4;
+}
